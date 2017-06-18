@@ -1,0 +1,74 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+.no-results-message {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 720px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.image .img-responsive {
+    margin: 0 auto;
+}
+
+.metadata {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hero-background {
+    background-image: url(../images/hero-background-xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 768px 377px;
+    min-height: 377px;
+}
+
+.hero-background .title {
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: xx-large;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .metadata {
+        text-align: center;
+    }
+    .hero-background {
+        background-image: url(../images/hero-background-sm.jpg);
+        background-size: 1200px 377px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-background {
+        background-image: url(../images/hero-background.jpg);
+        background-size: 1920px 377px;
+    }
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
+}
